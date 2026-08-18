@@ -1,130 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ministry — Support</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 24px;
-            color: #1a1a2e;
-            line-height: 1.6;
-        }
-        h1 { font-size: 28px; margin-bottom: 4px; }
-        h2 { font-size: 20px; margin-top: 28px; }
-        .subtitle { color: #666; font-size: 15px; margin-bottom: 24px; }
-        p { margin: 8px 0; }
-        a { color: #1a1a2e; }
-        details {
-            margin: 12px 0;
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 0;
-        }
-        details summary {
-            padding: 14px 16px;
-            cursor: pointer;
-            font-weight: 600;
-            font-size: 15px;
-            list-style: none;
-        }
-        details summary::-webkit-details-marker { display: none; }
-        details summary::before {
-            content: "＋";
-            margin-right: 10px;
-            font-weight: 400;
-            color: #666;
-        }
-        details[open] summary::before { content: "－"; }
-        details .answer {
-            padding: 0 16px 14px 16px;
-            font-size: 15px;
-            color: #333;
-        }
-        .section-card {
-            background: #f7f7fa;
-            border-radius: 12px;
-            padding: 20px;
-            margin: 16px 0;
-        }
-        .section-card h3 {
-            margin: 0 0 8px 0;
-            font-size: 17px;
-        }
-        .section-card p {
-            margin: 4px 0;
-            font-size: 15px;
-            color: #444;
-        }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
-            font-size: 13px;
-            color: #999;
-        }
-        .footer a { color: #666; }
-    </style>
-</head>
-<body>
-    <h1>Ministry Support</h1>
-    <p class="subtitle">Church scheduling assistant for iOS</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Support information for the Ministry mobile application."
+    />
+    <title>Ministry - Support</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="../">Ministry</a>
+        <div class="nav-links">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy</a>
+        </div>
+      </nav>
+    </header>
 
-    <p>Ministry helps church volunteers view upcoming service schedules, manage personal duty reminders, and track multiple members' schedules in one place.</p>
+    <main class="policy">
+      <h1>Ministry Support</h1>
+      <p class="date">Church scheduling companion for iPhone and Android</p>
 
-    <h2>Frequently Asked Questions</h2>
+      <p>
+        Ministry helps church volunteers view upcoming schedules, manage
+        personal duties, receive reminders, and sync assignments to a calendar.
+      </p>
 
-    <details>
+      <h2>Frequently asked questions</h2>
+
+      <details>
         <summary>How do I add family or team members?</summary>
-        <div class="answer">Go to the Settings tab (gear icon) and use the Members section to add names. Enter each name exactly as it appears on the church schedule. You can add up to 7 members.</div>
-    </details>
+        <div class="answer">
+          Go to Settings and use the Members section. Enter each name as it
+          appears on the church schedule. You can follow multiple members on one
+          device.
+        </div>
+      </details>
 
-    <details>
+      <details>
         <summary>Why don't I see any schedules?</summary>
-        <div class="answer">Make sure you've added at least one member whose name matches the church schedule. Names must match exactly (e.g. "John D." including the period). Pull down on the Home screen to refresh.</div>
-    </details>
+        <div class="answer">
+          Confirm that at least one saved member matches a name on the church
+          schedule, then pull down on the Home screen to refresh. Check your
+          internet connection if the schedule still does not appear.
+        </div>
+      </details>
 
-    <details>
+      <details>
         <summary>How do notifications work?</summary>
-        <div class="answer">Ministry uses local notifications to remind you of upcoming duties and schedules. You can choose reminder timings (2 hours, 6 hours, 1 day, etc.) in Settings. No notification data is sent to external servers.</div>
-    </details>
+        <div class="answer">
+          Ministry sends server-based push reminders for upcoming assignments
+          and personal duties. In Settings, you can choose reminder timings for
+          each role. Notifications must be allowed in your device settings.
+        </div>
+      </details>
 
-    <details>
-        <summary>Can I edit a schedule?</summary>
-        <div class="answer">Yes. Tap the pencil icon on a service card in the Calendar view to edit role assignments. Edits are stored locally on your device and shown with a gold "Edited" indicator. You can revert changes at any time.</div>
-    </details>
+      <details>
+        <summary>How do I sync assignments to a calendar?</summary>
+        <div class="answer">
+          Open Settings and choose Calendar Sync. On iPhone, choose Apple
+          Calendar or Google Calendar. On Android, connect Google Calendar.
+          Ministry creates a separate calendar named Ministry and updates it
+          when you tap Sync Now.
+        </div>
+      </details>
 
-    <details>
-        <summary>How do I create a personal duty reminder?</summary>
-        <div class="answer">Tap the "+" button on the Home screen. Fill in the category, title, date, and time, then save. You'll receive notifications based on your chosen reminder timings.</div>
-    </details>
+      <details>
+        <summary>Why did Google ask for calendar permission?</summary>
+        <div class="answer">
+          Ministry needs permission to create and manage the dedicated Ministry
+          calendar. It also reads calendar-list metadata to find that calendar
+          again across devices. It does not read events from unrelated
+          calendars.
+        </div>
+      </details>
 
-    <details>
+      <details>
+        <summary>How do I create a personal duty?</summary>
+        <div class="answer">
+          Tap the add button on the Home screen, enter the duty details and
+          reminder timings, then save.
+        </div>
+      </details>
+
+      <details>
         <summary>How do I delete my data?</summary>
-        <div class="answer">All personal data (members, duties, preferences) is stored on your device. Deleting the app removes all local data. Bug reports and anonymous logs on our server are automatically deleted after 90 days.</div>
-    </details>
+        <div class="answer">
+          Removing the App deletes local settings. You can delete the Ministry
+          calendar in your calendar app and revoke Google access from your
+          Google Account. For deletion of backend information associated with
+          your installation, email
+          <a href="mailto:ministry.shigong@gmail.com"
+            >ministry.shigong@gmail.com</a
+          >.
+        </div>
+      </details>
 
-    <details>
-        <summary>What does the app collect?</summary>
-        <div class="answer">Ministry does not collect email addresses, phone numbers, or location data. It fetches schedules and events from our server (read-only) and can send bug reports and anonymous diagnostics. See our <a href="https://tedw1119.github.io/Ministry-Privacy/">Privacy Policy</a> for full details.</div>
-    </details>
+      <details>
+        <summary>What information does Ministry process?</summary>
+        <div class="answer">
+          Ministry processes followed member names, reminder preferences, an
+          installation identifier, push-delivery information, personal duties,
+          and limited diagnostics. Google Calendar access is optional. See the
+          <a href="../privacy/">Privacy Policy</a> for complete details.
+        </div>
+      </details>
 
-    <div class="section-card">
-        <h3>Report a Bug</h3>
-        <p>Found something wrong? Use the "Report a Bug" option in the app's Settings tab. Include a description of what happened and we'll look into it.</p>
-    </div>
+      <div class="support-block">
+        <h2>Report a problem</h2>
+        <p>
+          Use Report a Bug in the App's Settings tab, or email
+          <a href="mailto:ministry.shigong@gmail.com"
+            >ministry.shigong@gmail.com</a
+          >. Include what you expected, what happened, and your phone platform.
+        </p>
+      </div>
+    </main>
 
-    <div class="section-card">
-        <h3>Requirements</h3>
-        <p>iOS 17.0 or later · iPhone</p>
-    </div>
-
-    <div class="footer">
-        <p><a href="https://tedw1119.github.io/Ministry-Privacy/">Privacy Policy</a></p>
-        <p>&copy; 2026 Ministry App</p>
-    </div>
-</body>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>&copy; 2026 Ministry App</span>
+        <div class="footer-links">
+          <a href="../">Home</a>
+          <a href="../privacy/">Privacy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
